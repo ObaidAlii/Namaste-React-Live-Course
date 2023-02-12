@@ -1,0 +1,33 @@
+-> JSX
+  JSX is a JavaScript Syntax extention which gives us the ability to write HTML like syntax inside JavaScript code.
+  It can be refered as expression. Behind the scenes, Babel transpiles this JSX code into React.createElement and then createElement is then tranformed into HTML dom.
+
+-> React.createElement v/s JSX
+  createElement method comes in with React library which allows us to create elements in the code. But using this can get complicated when we have multiple hirarchy of code. JSX on the other hand has simpler syntax, we can write code in HTML like syntax and it is converted into createElement code. using JSX simplifies code and it is programmer friendly.
+
+-> Behind the scenes of JSX
+  Behind the scenes, Babel transpiles this JSX code into React.createElement and then createElement is then tranformed into HTML dom.
+
+-> Babel & Parcel Role in JSX
+  Babel is a very famous transpiler that basically allows us to use future JavaScript in today's browsers. In simple words, it can convert the latest version of JavaScript code into the one that the browser understands. in other words it converts JSX into browser understandable JS code.
+
+-> Components in React
+  Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and returns a peice of code. Components come in two types, Class components and Function components.
+
+-> Functional Components
+  It is nothing but a JavaScript function that may take in props as parameters and returns a react element. In the functional Components, the return value is the JSX code to render to the DOM tree.
+
+-> Composing Components in React? 
+  In React, we can make components more generic by accepting props, which are to React components what parameters are to functions. Component composition is the name for passing components as props to other components, thus creating new components with other components.
+
+-> Type in Script Tag
+  The <script> HTML element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.
+  A Type attribute indicates the type of script represented. The value of this attribute will be one of the following:
+  - Attribute is not set: Indicates that the script is a "classic script", containing JavaScript code.
+  - Module: This value causes the code to be treated as a JavaScript module. The processing of the script contents is deferred.
+  - Any other value: The embedded content is treated as a data block, and won't be processed by the browser.
+  Module Should be used in our case.
+
+-> {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent><TitleComponent/>}
+  First is a react element, second is a self closing tag for react component. Third is also a react component but with the complete tag.
+  
